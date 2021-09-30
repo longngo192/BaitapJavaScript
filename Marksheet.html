@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="MarkSheet.css">
+    <title>MarkSheet</title>
+</head>
+<body>
+<div class="form">
+    <h1>Class MarkSheet</h1>
+    <div class="form_field">
+            <span class="label">
+                Họ Và Tên:
+                </span>
+        <input type="text" id="full_name_input">
+    </div>
+    <div class="form_field">
+            <span class="label">
+                Điểm Toán:
+                </span>
+        <input type="text" id="math_mark_input">
+    </div>
+    <div class="form_field">
+            <span class="label">
+                Điểm Lý:
+                </span>
+        <input type="text" id="physical_mark_input">
+    </div>
+    <div class="form_field">
+            <span class="label">
+                Điểm Hóa:
+                </span>
+        <input type="text" id="chem_mark_input">
+    </div>
+    <button id="submit" onclick="getFormData()">Nhập</button>
+</div>
+<table id="data_table" >
+    <tr>
+        <th>STT</th>
+        <th>Họ Và Tên</th>
+        <th>Toán</th>
+        <th>Lý</th>
+        <th>Hóa</th>
+        <th>Trung Bình</th>
+    </tr>
+</table>
+<div class="group_button">
+    <button id="avg" onclick="cal_avr_table()">Tính Điểm Trung Bình</button>
+    <button id="good_student_detected">Xác Định Học Sinh Giỏi</button>
+</div>
+
+<script src="MarkSheet.js"></script>
+</body>
+</html>
